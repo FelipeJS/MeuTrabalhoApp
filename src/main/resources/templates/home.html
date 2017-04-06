@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Meu Trabalho</title>
+</head>
+<body>
+	<h1>Meu Trabalho</h1>
+	<section class="Page-top">
+	    <header class="Page-header" role="banner">
+	      <div class="MobileNav">
+	        <div class="MobileNav-container">
+	          <div class="MobileNav-left">
+	            <a href="/" class="MobileNav-logo"><svg class="Icon">
+	              <title>DigitalOcean Logo</title>
+	              <use xlink:href="#logo"></use>
+	            </svg></a>
+	          </div>
+	          <div class="MobileNav-right">
+	            <button class="Button--reset MobileNav-toggle" type="button" aria-label="Nav Toggle">
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	            </button>
+	          </div>
+	        </div>
+	        <nav class="MobileNav-list" role="navigation">
+	          <ul>
+	            <li><a href="/products/" class="TopNav-link">Products</a></li>
+	            <li><a href="/solutions/" class="TopNav-link">Solutions</a></li>
+	            <li><a href="/pricing/" class="TopNav-link">Pricing</a></li>
+	            <li><a href="/community/articles" class="TopNav-link">Tutorials</a></li>
+	            <li><a href="https://status.digitalocean.com/" class="TopNav-link">Network Status</a></li>
+	            <li><a href="/company/careers/" class="TopNav-link">Careers</a></li>
+	            <li><a href="/community/" class="TopNav-link">Community</a></li>
+	            <li><a href="https://cloud.digitalocean.com/login" class="u-textPrimary">Login</a></li>
+	            <li><a href="https://cloud.digitalocean.com/registrations/new" class="u-textPrimary">Sign Up</a></li>
+	          </ul>
+	        </nav>
+	      </div>
+	      <div class="TopNav">
+	        <div class="Container">
+	          <div class="TopNav-container">
+	            <nav class="TopNav-left" role="navigation">
+	              <ul class="Inline Inline--medium u-textNoBreak TopNav-list">
+	                <li><a href="/" class="TopNav-logo"><svg class="Icon">
+	                  <title>DigitalOcean Logo</title>
+	                  <use xlink:href="#logo"></use>
+	                </svg></a></li>
+	                <li>
+	                  <div class="Dropdown" aria-haspopup="true" aria-expanded="false">
+	                    <button class="Button--reset TopNav-link" data-dropdown="" type="button">Products <svg class="Icon Icon--small">
+	                    <use xlink:href="#arrow-down"></use></svg></button>
+	                    <div class="Dropdown-content Dropdown-content--small">
+	                      <ul class="Dropdown-nav">
+	                        <li><a href="/products/" class="TopNav-link">Overview</a></li>
+	                        <li><a href="/products/compute/" class="TopNav-link">Compute</a></li>
+	                        <li><a href="/products/storage/" class="TopNav-link">Storage</a></li>
+	                        <li><a href="/products/networking/" class="TopNav-link">Networking</a></li>
+	                        <li><a href="/products/load-balancer/" class="TopNav-link">Load Balancer</a></li>
+	                        <li><a href="/products/monitoring/" class="TopNav-link">Monitoring</a></li>
+	                        <li><a href="/products/one-click-apps/" class="TopNav-link">Apps</a></li>
+	                        <li><a href="/products/teams/" class="TopNav-link">Teams</a></li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                </li>
+	                <li class="u-hiddenDown@medium">
+	                  <div class="Dropdown" aria-haspopup="true" aria-expanded="false">
+	                    <button class="Button--reset TopNav-link" data-dropdown="" type="button">Solutions <svg class="Icon Icon--small">
+	                    <use xlink:href="#arrow-down"></use></svg></button>
+	                    <div class="Dropdown-content Dropdown-content--small">
+	                      <ul class="Dropdown-nav">
+	                        <li><a href="/solutions/" class="TopNav-link">Overview</a></li>
+	                        <li><a href="/solutions/big-data/" class="TopNav-link">Big Data</a></li>
+	                        <li><a href="/solutions/web-apps/" class="TopNav-link">Web Apps</a></li>
+	                        <li><a href="/solutions/websites/" class="TopNav-link">Websites</a></li>
+	                        <li><a href="/solutions/hosted-services/" class="TopNav-link">Hosted Services</a></li>
+	                        <li><a href="/solutions/dev-tools/" class="TopNav-link">Developer Tools</a></li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                </li>
+	                <li><a href="/pricing/" class="TopNav-link">Pricing</a></li>
+	                <li><a href="/community/" class="TopNav-link">Community</a></li>
+	              </ul>
+	            </nav>
+	            <nav class="TopNav-right">
+	              <ul class="Inline Inline--medium u-textNoBreak TopNav-list">
+	                <li><a href="https://developers.digitalocean.com/documentation/v2/" class="TopNav-link">API</a></li>
+	                <li><a href="/help/" class="TopNav-link">Help</a></li>
+	                <li><a href="https://cloud.digitalocean.com/login" class="TopNav-link">Log In</a></li>
+	                <li><a href="https://cloud.digitalocean.com/registrations/new" class="Button Button--primary TopNav-signUp">Sign Up</a></li>
+	              </ul>
+	            </nav>
+	          </div>
+	        </div>
+	      </div>
+	    </header>
+	
+	</section>
+
+	<p>
+		<a th:href="@{/index}">Acessar o sistema</a> 
+	</p>
+	
+</body>
+</html>
